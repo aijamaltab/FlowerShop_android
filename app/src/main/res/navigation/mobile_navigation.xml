@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.flowershop.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_bouquetsFragment"
+            app:destination="@id/bouquetsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_houseplantsFragment"
+            app:destination="@id/houseplantsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_weddingFragment"
+            app:destination="@id/weddingFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_feedbacksFragment"
+            app:destination="@id/feedbacksFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_addFeedbackFragment"
+            app:destination="@id/addFeedbackFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_basketFragment"
+            app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_dashboard"-->
+<!--        android:name="com.example.flowershop.ui.dashboard.CatalogFragment"-->
+<!--        android:label="@string/title_dashboard"-->
+<!--        tools:layout="@layout/fragment_catalog" />-->
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.flowershop.ui.notifications.BoardFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_notifications_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bouquetsFragment"
+        android:name="com.example.flowershop.ui.bouquets.BouquetsFragment"
+        android:label="fragment_bouquets"
+        tools:layout="@layout/fragment_bouquets" >
+        <action
+            android:id="@+id/action_bouquetsFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_bouquetsFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/houseplantsFragment"
+        android:name="com.example.flowershop.ui.houseplants.HouseplantsFragment"
+        android:label="fragment_houseplants"
+        tools:layout="@layout/fragment_houseplants" >
+        <action
+            android:id="@+id/action_houseplantsFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_houseplantsFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/weddingFragment"
+        android:name="com.example.flowershop.ui.wedding.WeddingFragment"
+        android:label="fragment_wedding"
+        tools:layout="@layout/fragment_wedding" >
+        <action
+            android:id="@+id/action_weddingFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_weddingFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.flowershop.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.flowershop.ui.registration.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFeedbackFragment"
+        android:name="com.example.flowershop.ui.addfeedback.AddFeedbackFragment"
+        android:label="fragment_add_feedback"
+        tools:layout="@layout/fragment_add_feedback" >
+        <action
+            android:id="@+id/action_addFeedbackFragment_to_feedbacksFragment"
+            app:destination="@id/feedbacksFragment" />
+        <action
+            android:id="@+id/action_addFeedbackFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedbacksFragment"
+        android:name="com.example.flowershop.ui.feedbacks.FeedbacksFragment"
+        android:label="fragment_feedbacks"
+        tools:layout="@layout/fragment_feedbacks" >
+        <action
+            android:id="@+id/action_feedbacksFragment_to_addFeedbackFragment"
+            app:destination="@id/addFeedbackFragment" />
+        <action
+            android:id="@+id/action_feedbacksFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.example.flowershop.ui.basket.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basketFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_basketFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminPanelFragment"
+        android:name="com.example.flowershop.ui.admin.AdminPanelFragment"
+        android:label="fragment_admin_panel"
+        tools:layout="@layout/fragment_admin_panel" >
+        <action
+            android:id="@+id/action_adminPanelFragment_to_addFlowerFragment"
+            app:destination="@id/addFlowerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.flowershop.ui.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.flowershop.ui.contact.ContactFragment"
+        android:label="ContactFragment" >
+        <action
+            android:id="@+id/action_contactFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFlowerFragment"
+        android:name="com.example.flowershop.ui.admin.AddFlowerFragment"
+        android:label="AddFlowerFragment" >
+        <action
+            android:id="@+id/action_addFlowerFragment_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?android:attr/windowBackground">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Контакты"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- About Us Section -->
+        <TextView
+            android:id="@+id/about_us_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="О нас"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/about_us_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добро пожаловать в Pearl, ваш надёжный источник самых свежих и красивых цветов! Мы гордимся тем, что предоставляем нашим клиентам цветочные композиции высочайшего качества, которые идеально подходят для любого случая. В нашем ассортименте вы найдёте разнообразные букеты, цветочные корзины и уникальные флористические решения, созданные с любовью и вниманием к деталям.
+    В Pearl мы верим, что цветы – это не просто украшение, а способ выразить эмоции и создать атмосферу. Наши опытные флористы всегда готовы помочь вам подобрать идеальный букет, будь то для свадьбы, дня рождения, корпоративного мероприятия или просто чтобы порадовать любимого человека. Мы заботимся о каждом заказе, гарантируя его своевременную доставку и свежесть цветов.
+    Благодарим вас за то, что выбрали Pearl. Мы стремимся превзойти ваши ожидания и сделать каждый ваш день ярче и красивее с помощью наших цветов!"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Social Media Links Section -->
+        <TextView
+            android:id="@+id/social_media_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мы в социальных сетях"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <!-- WhatsApp Link -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/whatsapp"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#172196F3"
+                app:cardCornerRadius="26dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/whatsapp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Instagram Link -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/instagram"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#172196F3"
+                app:cardCornerRadius="26dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/instagram"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Telegram Link -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/telegram"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="#172196F3"
+                app:cardCornerRadius="26dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/telegram"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

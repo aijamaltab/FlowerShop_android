@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831105819372",
+    "project_id": "flowshop-22a66",
+    "storage_bucket": "flowshop-22a66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831105819372:android:dbf5675170b8b2a231bbc9",
+        "android_client_info": {
+          "package_name": "com.example.flowershop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrx6Msr7EO23W0SMJZQaOPDSAwL01KZPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

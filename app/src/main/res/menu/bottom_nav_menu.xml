@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+
+    <item
+        android:id="@+id/feedbacksFragment"
+        android:icon="@drawable/feedback"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/basketFragment"
+        android:icon="@drawable/add_shopping_cart"
+        android:title="Cart" />
+    <item
+        android:id="@+id/contactFragment"
+        android:icon="@drawable/baseline_add_call_24"
+        android:title="Contacts" />
+</menu>

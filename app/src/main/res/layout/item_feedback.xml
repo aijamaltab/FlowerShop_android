@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#998787"
+    android:padding="8dp"> <!-- Убедитесь, что padding и margin здесь разумны -->
+
+    <TextView
+        android:id="@+id/userTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:textColor="#9E1153"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/feedbackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".ui.basket.BasketFragment">
+
+    <!-- Кнопка "Назад" -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/baseline_arrow_back_ios_new_24"
+        android:contentDescription="button_back"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Заголовок "Ваша корзина:" -->
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Your basket:"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#BE849D"/>
+
+    <!-- Список товаров в корзине -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_catalog" />
+
+    <!-- Изображение-заглушка "Нет выбранных товаров" -->
+    <ImageView
+        android:id="@+id/place_holder"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:src="@drawable/emptycart"
+        android:visibility="visible"
+        android:layout_marginTop="8dp"
+
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!-- Общее количество для оплаты -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The amount:"
+            android:textSize="20sp"
+            android:layout_marginStart="12dp"
+            android:textColor="#BE849D"/>
+
+        <TextView
+            android:id="@+id/basket_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="20sp"
+            android:layout_marginStart="18dp"
+            android:textColor="#BE849D"/>
+    </LinearLayout>
+
+    <!-- Кнопка "Оплатить" -->
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#BE849D"
+        android:textColor="#FFFFFF"
+        android:text="Pay"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:onClick="payButtonClick" />
+
+
+</LinearLayout>
