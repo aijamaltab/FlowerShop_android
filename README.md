@@ -1,2 +1,1 @@
-This Android application was developed by a student team as part of our university coursework. The app simulates a fully functional flower shop
-
+Hello! This Android application was developed by a student team of two as part of our university coursework to put our theoretical knowledge into practical use. The app simulates a fully functional flower shop, and all development and implementation were carried out in Android Studio using Java.
